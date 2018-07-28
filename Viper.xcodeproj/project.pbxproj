@@ -8,20 +8,129 @@
 
 /* Begin PBXBuildFile section */
 		20B5D37B210CC4A500C94AE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D37A210CC4A500C94AE3 /* AppDelegate.swift */; };
-		20B5D37D210CC4A500C94AE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D37C210CC4A500C94AE3 /* ViewController.swift */; };
 		20B5D380210CC4A500C94AE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B5D37E210CC4A500C94AE3 /* Main.storyboard */; };
 		20B5D382210CC4A500C94AE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20B5D381210CC4A500C94AE3 /* Assets.xcassets */; };
 		20B5D385210CC4A500C94AE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B5D383210CC4A500C94AE3 /* LaunchScreen.storyboard */; };
+		20B5D3A8210CC4F300C94AE3 /* SellerSignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D38E210CC4F200C94AE3 /* SellerSignInInteractor.swift */; };
+		20B5D3A9210CC4F300C94AE3 /* SellerSignInInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D38F210CC4F200C94AE3 /* SellerSignInInteractorIO.swift */; };
+		20B5D3AA210CC4F300C94AE3 /* SellerSignInModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D391210CC4F200C94AE3 /* SellerSignInModuleInterface.swift */; };
+		20B5D3AB210CC4F300C94AE3 /* SellerSignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D393210CC4F200C94AE3 /* SellerSignInRouter.swift */; };
+		20B5D3AC210CC4F300C94AE3 /* SellerSignedInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D396210CC4F200C94AE3 /* SellerSignedInPresenter.swift */; };
+		20B5D3AD210CC4F300C94AE3 /* SellerSignedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D398210CC4F200C94AE3 /* SellerSignedInViewController.swift */; };
+		20B5D3AE210CC4F300C94AE3 /* SellerSignedInViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D399210CC4F200C94AE3 /* SellerSignedInViewInterface.swift */; };
+		20B5D3AF210CC4F300C94AE3 /* SellerSignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D39C210CC4F200C94AE3 /* SellerSignUpInteractor.swift */; };
+		20B5D3B0210CC4F300C94AE3 /* SellerSignUpInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D39D210CC4F200C94AE3 /* SellerSignUpInteractorIO.swift */; };
+		20B5D3B1210CC4F300C94AE3 /* SellerSignUpModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D39F210CC4F200C94AE3 /* SellerSignUpModuleInterface.swift */; };
+		20B5D3B2210CC4F300C94AE3 /* SellerSignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3A1210CC4F200C94AE3 /* SellerSignUpRouter.swift */; };
+		20B5D3B3210CC4F300C94AE3 /* SellerSignedUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3A4210CC4F200C94AE3 /* SellerSignedUpPresenter.swift */; };
+		20B5D3B4210CC4F300C94AE3 /* SellerSignedUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3A6210CC4F200C94AE3 /* SellerSignedUpViewController.swift */; };
+		20B5D3B5210CC4F300C94AE3 /* SellerSignedUpViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3A7210CC4F200C94AE3 /* SellerSignedUpViewInterface.swift */; };
+		20B5D3D2210CC52300C94AE3 /* BMBuyerModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3B8210CC52300C94AE3 /* BMBuyerModelBuilder.swift */; };
+		20B5D3D3210CC52300C94AE3 /* BMCountryModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3B9210CC52300C94AE3 /* BMCountryModelBuilder.swift */; };
+		20B5D3D4210CC52300C94AE3 /* BMExteriorModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3BA210CC52300C94AE3 /* BMExteriorModelBuilder.swift */; };
+		20B5D3D5210CC52300C94AE3 /* BMModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3BB210CC52300C94AE3 /* BMModelBuilder.swift */; };
+		20B5D3D6210CC52300C94AE3 /* BMPropertyModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3BC210CC52300C94AE3 /* BMPropertyModelBuilder.swift */; };
+		20B5D3D7210CC52300C94AE3 /* BMPropertyStyleModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3BD210CC52300C94AE3 /* BMPropertyStyleModelBuilder.swift */; };
+		20B5D3D8210CC52300C94AE3 /* BMPropertyTypeModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3BE210CC52300C94AE3 /* BMPropertyTypeModelBuilder.swift */; };
+		20B5D3D9210CC52300C94AE3 /* BMSellerModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3BF210CC52300C94AE3 /* BMSellerModelBuilder.swift */; };
+		20B5D3DA210CC52300C94AE3 /* BMWebServiceBuyerUrlGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3C1210CC52300C94AE3 /* BMWebServiceBuyerUrlGenerator.swift */; };
+		20B5D3DB210CC52300C94AE3 /* BMWebServiceExteriorUrlGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3C2210CC52300C94AE3 /* BMWebServiceExteriorUrlGenerator.swift */; };
+		20B5D3DC210CC52300C94AE3 /* BMWebServicePropertyTypeUrlGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3C3210CC52300C94AE3 /* BMWebServicePropertyTypeUrlGenerator.swift */; };
+		20B5D3DD210CC52300C94AE3 /* BMWebServicePropertyUrlGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3C4210CC52300C94AE3 /* BMWebServicePropertyUrlGenerator.swift */; };
+		20B5D3DE210CC52300C94AE3 /* BMWebServiceSellerUrlGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3C5210CC52300C94AE3 /* BMWebServiceSellerUrlGenerator.swift */; };
+		20B5D3DF210CC52300C94AE3 /* BMWebServiceStatesUrlGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3C6210CC52300C94AE3 /* BMWebServiceStatesUrlGenerator.swift */; };
+		20B5D3E0210CC52300C94AE3 /* BMWebServiceStylesUrlGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3C7210CC52300C94AE3 /* BMWebServiceStylesUrlGenerator.swift */; };
+		20B5D3E1210CC52300C94AE3 /* BMWebServiceUrlGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3C8210CC52300C94AE3 /* BMWebServiceUrlGenerator.swift */; };
+		20B5D3E2210CC52300C94AE3 /* BMWebServiceCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3CA210CC52300C94AE3 /* BMWebServiceCommunicator.swift */; };
+		20B5D3E3210CC52300C94AE3 /* BMWebServiceCommunicatorForBuyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3CB210CC52300C94AE3 /* BMWebServiceCommunicatorForBuyer.swift */; };
+		20B5D3E4210CC52300C94AE3 /* BMWebServiceCommunicatorForCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3CC210CC52300C94AE3 /* BMWebServiceCommunicatorForCountry.swift */; };
+		20B5D3E5210CC52300C94AE3 /* BMWebServiceCommunicatorForExterior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3CD210CC52300C94AE3 /* BMWebServiceCommunicatorForExterior.swift */; };
+		20B5D3E6210CC52300C94AE3 /* BMWebServiceCommunicatorForProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3CE210CC52300C94AE3 /* BMWebServiceCommunicatorForProperty.swift */; };
+		20B5D3E7210CC52300C94AE3 /* BMWebServiceCommunicatorForPropertyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3CF210CC52300C94AE3 /* BMWebServiceCommunicatorForPropertyStyle.swift */; };
+		20B5D3E8210CC52300C94AE3 /* BMWebServiceCommunicatorForPropertyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3D0210CC52300C94AE3 /* BMWebServiceCommunicatorForPropertyType.swift */; };
+		20B5D3E9210CC52300C94AE3 /* BMWebServiceCommunicatorForSeller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3D1210CC52300C94AE3 /* BMWebServiceCommunicatorForSeller.swift */; };
+		20B5D3F2210CDEA500C94AE3 /* Seller.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B5D3EE210CDEA500C94AE3 /* Seller.storyboard */; };
+		20B5D3FC210CDF3E00C94AE3 /* BMBuyerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3F4210CDF3E00C94AE3 /* BMBuyerModel.swift */; };
+		20B5D3FD210CDF3E00C94AE3 /* BMCountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3F5210CDF3E00C94AE3 /* BMCountryModel.swift */; };
+		20B5D3FE210CDF3E00C94AE3 /* BMExteriorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3F6210CDF3E00C94AE3 /* BMExteriorModel.swift */; };
+		20B5D3FF210CDF3E00C94AE3 /* BMPropertyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3F7210CDF3E00C94AE3 /* BMPropertyModel.swift */; };
+		20B5D400210CDF3E00C94AE3 /* BMPropertyStyleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3F8210CDF3E00C94AE3 /* BMPropertyStyleModel.swift */; };
+		20B5D401210CDF3E00C94AE3 /* BMPropertyTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3F9210CDF3E00C94AE3 /* BMPropertyTypeModel.swift */; };
+		20B5D402210CDF3E00C94AE3 /* BMSellerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3FA210CDF3E00C94AE3 /* BMSellerModel.swift */; };
+		20B5D403210CDF3E00C94AE3 /* BMStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D3FB210CDF3E00C94AE3 /* BMStateModel.swift */; };
+		20B5D40F210CDF7500C94AE3 /* BMAppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D405210CDF7400C94AE3 /* BMAppDependencies.swift */; };
+		20B5D410210CDF7500C94AE3 /* BMBuyerInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D406210CDF7400C94AE3 /* BMBuyerInfoManager.swift */; };
+		20B5D411210CDF7500C94AE3 /* BMKeyBoardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D407210CDF7400C94AE3 /* BMKeyBoardManager.swift */; };
+		20B5D412210CDF7500C94AE3 /* BMSellerInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D408210CDF7400C94AE3 /* BMSellerInfoManager.swift */; };
+		20B5D414210CDF7500C94AE3 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D40C210CDF7400C94AE3 /* RootRouter.swift */; };
+		20B5D415210CDF7500C94AE3 /* UIStoryboard+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5D40D210CDF7400C94AE3 /* UIStoryboard+Addition.swift */; };
+		92273486D0C9E445BC4F1A80 /* Pods_Viper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B20629F0C3D4BDEC85091CE /* Pods_Viper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		20B5D377210CC4A500C94AE3 /* Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B5D37A210CC4A500C94AE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		20B5D37C210CC4A500C94AE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		20B5D37F210CC4A500C94AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20B5D381210CC4A500C94AE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20B5D384210CC4A500C94AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20B5D386210CC4A500C94AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20B5D38E210CC4F200C94AE3 /* SellerSignInInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerSignInInteractor.swift; sourceTree = "<group>"; };
+		20B5D38F210CC4F200C94AE3 /* SellerSignInInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerSignInInteractorIO.swift; sourceTree = "<group>"; };
+		20B5D391210CC4F200C94AE3 /* SellerSignInModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerSignInModuleInterface.swift; sourceTree = "<group>"; };
+		20B5D393210CC4F200C94AE3 /* SellerSignInRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerSignInRouter.swift; sourceTree = "<group>"; };
+		20B5D396210CC4F200C94AE3 /* SellerSignedInPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerSignedInPresenter.swift; sourceTree = "<group>"; };
+		20B5D398210CC4F200C94AE3 /* SellerSignedInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerSignedInViewController.swift; sourceTree = "<group>"; };
+		20B5D399210CC4F200C94AE3 /* SellerSignedInViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerSignedInViewInterface.swift; sourceTree = "<group>"; };
+		20B5D39C210CC4F200C94AE3 /* SellerSignUpInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerSignUpInteractor.swift; sourceTree = "<group>"; };
+		20B5D39D210CC4F200C94AE3 /* SellerSignUpInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerSignUpInteractorIO.swift; sourceTree = "<group>"; };
+		20B5D39F210CC4F200C94AE3 /* SellerSignUpModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerSignUpModuleInterface.swift; sourceTree = "<group>"; };
+		20B5D3A1210CC4F200C94AE3 /* SellerSignUpRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerSignUpRouter.swift; sourceTree = "<group>"; };
+		20B5D3A4210CC4F200C94AE3 /* SellerSignedUpPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerSignedUpPresenter.swift; sourceTree = "<group>"; };
+		20B5D3A6210CC4F200C94AE3 /* SellerSignedUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerSignedUpViewController.swift; sourceTree = "<group>"; };
+		20B5D3A7210CC4F200C94AE3 /* SellerSignedUpViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerSignedUpViewInterface.swift; sourceTree = "<group>"; };
+		20B5D3B8210CC52300C94AE3 /* BMBuyerModelBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMBuyerModelBuilder.swift; sourceTree = "<group>"; };
+		20B5D3B9210CC52300C94AE3 /* BMCountryModelBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCountryModelBuilder.swift; sourceTree = "<group>"; };
+		20B5D3BA210CC52300C94AE3 /* BMExteriorModelBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMExteriorModelBuilder.swift; sourceTree = "<group>"; };
+		20B5D3BB210CC52300C94AE3 /* BMModelBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMModelBuilder.swift; sourceTree = "<group>"; };
+		20B5D3BC210CC52300C94AE3 /* BMPropertyModelBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMPropertyModelBuilder.swift; sourceTree = "<group>"; };
+		20B5D3BD210CC52300C94AE3 /* BMPropertyStyleModelBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMPropertyStyleModelBuilder.swift; sourceTree = "<group>"; };
+		20B5D3BE210CC52300C94AE3 /* BMPropertyTypeModelBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMPropertyTypeModelBuilder.swift; sourceTree = "<group>"; };
+		20B5D3BF210CC52300C94AE3 /* BMSellerModelBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMSellerModelBuilder.swift; sourceTree = "<group>"; };
+		20B5D3C1210CC52300C94AE3 /* BMWebServiceBuyerUrlGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMWebServiceBuyerUrlGenerator.swift; sourceTree = "<group>"; };
+		20B5D3C2210CC52300C94AE3 /* BMWebServiceExteriorUrlGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMWebServiceExteriorUrlGenerator.swift; sourceTree = "<group>"; };
+		20B5D3C3210CC52300C94AE3 /* BMWebServicePropertyTypeUrlGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMWebServicePropertyTypeUrlGenerator.swift; sourceTree = "<group>"; };
+		20B5D3C4210CC52300C94AE3 /* BMWebServicePropertyUrlGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMWebServicePropertyUrlGenerator.swift; sourceTree = "<group>"; };
+		20B5D3C5210CC52300C94AE3 /* BMWebServiceSellerUrlGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMWebServiceSellerUrlGenerator.swift; sourceTree = "<group>"; };
+		20B5D3C6210CC52300C94AE3 /* BMWebServiceStatesUrlGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMWebServiceStatesUrlGenerator.swift; sourceTree = "<group>"; };
+		20B5D3C7210CC52300C94AE3 /* BMWebServiceStylesUrlGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMWebServiceStylesUrlGenerator.swift; sourceTree = "<group>"; };
+		20B5D3C8210CC52300C94AE3 /* BMWebServiceUrlGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMWebServiceUrlGenerator.swift; sourceTree = "<group>"; };
+		20B5D3CA210CC52300C94AE3 /* BMWebServiceCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMWebServiceCommunicator.swift; sourceTree = "<group>"; };
+		20B5D3CB210CC52300C94AE3 /* BMWebServiceCommunicatorForBuyer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMWebServiceCommunicatorForBuyer.swift; sourceTree = "<group>"; };
+		20B5D3CC210CC52300C94AE3 /* BMWebServiceCommunicatorForCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMWebServiceCommunicatorForCountry.swift; sourceTree = "<group>"; };
+		20B5D3CD210CC52300C94AE3 /* BMWebServiceCommunicatorForExterior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMWebServiceCommunicatorForExterior.swift; sourceTree = "<group>"; };
+		20B5D3CE210CC52300C94AE3 /* BMWebServiceCommunicatorForProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMWebServiceCommunicatorForProperty.swift; sourceTree = "<group>"; };
+		20B5D3CF210CC52300C94AE3 /* BMWebServiceCommunicatorForPropertyStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMWebServiceCommunicatorForPropertyStyle.swift; sourceTree = "<group>"; };
+		20B5D3D0210CC52300C94AE3 /* BMWebServiceCommunicatorForPropertyType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMWebServiceCommunicatorForPropertyType.swift; sourceTree = "<group>"; };
+		20B5D3D1210CC52300C94AE3 /* BMWebServiceCommunicatorForSeller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMWebServiceCommunicatorForSeller.swift; sourceTree = "<group>"; };
+		20B5D3EE210CDEA500C94AE3 /* Seller.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Seller.storyboard; sourceTree = "<group>"; };
+		20B5D3F4210CDF3E00C94AE3 /* BMBuyerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMBuyerModel.swift; sourceTree = "<group>"; };
+		20B5D3F5210CDF3E00C94AE3 /* BMCountryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMCountryModel.swift; sourceTree = "<group>"; };
+		20B5D3F6210CDF3E00C94AE3 /* BMExteriorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMExteriorModel.swift; sourceTree = "<group>"; };
+		20B5D3F7210CDF3E00C94AE3 /* BMPropertyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMPropertyModel.swift; sourceTree = "<group>"; };
+		20B5D3F8210CDF3E00C94AE3 /* BMPropertyStyleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMPropertyStyleModel.swift; sourceTree = "<group>"; };
+		20B5D3F9210CDF3E00C94AE3 /* BMPropertyTypeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMPropertyTypeModel.swift; sourceTree = "<group>"; };
+		20B5D3FA210CDF3E00C94AE3 /* BMSellerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMSellerModel.swift; sourceTree = "<group>"; };
+		20B5D3FB210CDF3E00C94AE3 /* BMStateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMStateModel.swift; sourceTree = "<group>"; };
+		20B5D405210CDF7400C94AE3 /* BMAppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMAppDependencies.swift; sourceTree = "<group>"; };
+		20B5D406210CDF7400C94AE3 /* BMBuyerInfoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMBuyerInfoManager.swift; sourceTree = "<group>"; };
+		20B5D407210CDF7400C94AE3 /* BMKeyBoardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMKeyBoardManager.swift; sourceTree = "<group>"; };
+		20B5D408210CDF7400C94AE3 /* BMSellerInfoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMSellerInfoManager.swift; sourceTree = "<group>"; };
+		20B5D409210CDF7400C94AE3 /* BuyerMarket-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BuyerMarket-Bridging-Header.h"; sourceTree = "<group>"; };
+		20B5D40C210CDF7400C94AE3 /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		20B5D40D210CDF7400C94AE3 /* UIStoryboard+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Addition.swift"; sourceTree = "<group>"; };
+		3D3D076B4A8D34E34DF785EF /* Pods-Viper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Viper/Pods-Viper.release.xcconfig"; sourceTree = "<group>"; };
+		4EB559865992E6337CA9B8A6 /* Pods-Viper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Viper/Pods-Viper.debug.xcconfig"; sourceTree = "<group>"; };
+		5B20629F0C3D4BDEC85091CE /* Pods_Viper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +138,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92273486D0C9E445BC4F1A80 /* Pods_Viper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12AB825EDB63D2487CE3730A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EB559865992E6337CA9B8A6 /* Pods-Viper.debug.xcconfig */,
+				3D3D076B4A8D34E34DF785EF /* Pods-Viper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		20B5D36E210CC4A500C94AE3 = {
 			isa = PBXGroup;
 			children = (
 				20B5D379210CC4A500C94AE3 /* Viper */,
 				20B5D378210CC4A500C94AE3 /* Products */,
+				12AB825EDB63D2487CE3730A /* Pods */,
+				E158B188D938355AB0E7EF67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +176,242 @@
 			isa = PBXGroup;
 			children = (
 				20B5D37A210CC4A500C94AE3 /* AppDelegate.swift */,
-				20B5D37C210CC4A500C94AE3 /* ViewController.swift */,
+				20B5D404210CDF7400C94AE3 /* Common */,
+				20B5D3F3210CDF3E00C94AE3 /* Entity */,
+				20B5D3EA210CDEA500C94AE3 /* StoryBoard */,
+				20B5D3B6210CC52300C94AE3 /* WebServiceModule */,
+				20B5D38C210CC4F200C94AE3 /* SellerSignInModule */,
+				20B5D39A210CC4F200C94AE3 /* SellerSignUpModule */,
 				20B5D37E210CC4A500C94AE3 /* Main.storyboard */,
 				20B5D381210CC4A500C94AE3 /* Assets.xcassets */,
 				20B5D383210CC4A500C94AE3 /* LaunchScreen.storyboard */,
 				20B5D386210CC4A500C94AE3 /* Info.plist */,
 			);
 			path = Viper;
+			sourceTree = "<group>";
+		};
+		20B5D38C210CC4F200C94AE3 /* SellerSignInModule */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D38D210CC4F200C94AE3 /* Application Logic */,
+				20B5D390210CC4F200C94AE3 /* Module Interface */,
+				20B5D392210CC4F200C94AE3 /* Router */,
+				20B5D394210CC4F200C94AE3 /* User Interface */,
+			);
+			path = SellerSignInModule;
+			sourceTree = "<group>";
+		};
+		20B5D38D210CC4F200C94AE3 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D38E210CC4F200C94AE3 /* SellerSignInInteractor.swift */,
+				20B5D38F210CC4F200C94AE3 /* SellerSignInInteractorIO.swift */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		20B5D390210CC4F200C94AE3 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D391210CC4F200C94AE3 /* SellerSignInModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		20B5D392210CC4F200C94AE3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D393210CC4F200C94AE3 /* SellerSignInRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		20B5D394210CC4F200C94AE3 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D395210CC4F200C94AE3 /* Presenter */,
+				20B5D397210CC4F200C94AE3 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		20B5D395210CC4F200C94AE3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D396210CC4F200C94AE3 /* SellerSignedInPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		20B5D397210CC4F200C94AE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D398210CC4F200C94AE3 /* SellerSignedInViewController.swift */,
+				20B5D399210CC4F200C94AE3 /* SellerSignedInViewInterface.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20B5D39A210CC4F200C94AE3 /* SellerSignUpModule */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D39B210CC4F200C94AE3 /* Application Logic */,
+				20B5D39E210CC4F200C94AE3 /* Module Interface */,
+				20B5D3A0210CC4F200C94AE3 /* Router */,
+				20B5D3A2210CC4F200C94AE3 /* User Interface */,
+			);
+			path = SellerSignUpModule;
+			sourceTree = "<group>";
+		};
+		20B5D39B210CC4F200C94AE3 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D39C210CC4F200C94AE3 /* SellerSignUpInteractor.swift */,
+				20B5D39D210CC4F200C94AE3 /* SellerSignUpInteractorIO.swift */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		20B5D39E210CC4F200C94AE3 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D39F210CC4F200C94AE3 /* SellerSignUpModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		20B5D3A0210CC4F200C94AE3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D3A1210CC4F200C94AE3 /* SellerSignUpRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		20B5D3A2210CC4F200C94AE3 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D3A3210CC4F200C94AE3 /* Presenter */,
+				20B5D3A5210CC4F200C94AE3 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		20B5D3A3210CC4F200C94AE3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D3A4210CC4F200C94AE3 /* SellerSignedUpPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		20B5D3A5210CC4F200C94AE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D3A6210CC4F200C94AE3 /* SellerSignedUpViewController.swift */,
+				20B5D3A7210CC4F200C94AE3 /* SellerSignedUpViewInterface.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20B5D3B6210CC52300C94AE3 /* WebServiceModule */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D3B7210CC52300C94AE3 /* BMModelBuilder */,
+				20B5D3C0210CC52300C94AE3 /* BMUrlGenerator */,
+				20B5D3C9210CC52300C94AE3 /* BMWebServiceCommunicator */,
+			);
+			path = WebServiceModule;
+			sourceTree = "<group>";
+		};
+		20B5D3B7210CC52300C94AE3 /* BMModelBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D3B8210CC52300C94AE3 /* BMBuyerModelBuilder.swift */,
+				20B5D3B9210CC52300C94AE3 /* BMCountryModelBuilder.swift */,
+				20B5D3BA210CC52300C94AE3 /* BMExteriorModelBuilder.swift */,
+				20B5D3BB210CC52300C94AE3 /* BMModelBuilder.swift */,
+				20B5D3BC210CC52300C94AE3 /* BMPropertyModelBuilder.swift */,
+				20B5D3BD210CC52300C94AE3 /* BMPropertyStyleModelBuilder.swift */,
+				20B5D3BE210CC52300C94AE3 /* BMPropertyTypeModelBuilder.swift */,
+				20B5D3BF210CC52300C94AE3 /* BMSellerModelBuilder.swift */,
+			);
+			path = BMModelBuilder;
+			sourceTree = "<group>";
+		};
+		20B5D3C0210CC52300C94AE3 /* BMUrlGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D3C1210CC52300C94AE3 /* BMWebServiceBuyerUrlGenerator.swift */,
+				20B5D3C2210CC52300C94AE3 /* BMWebServiceExteriorUrlGenerator.swift */,
+				20B5D3C3210CC52300C94AE3 /* BMWebServicePropertyTypeUrlGenerator.swift */,
+				20B5D3C4210CC52300C94AE3 /* BMWebServicePropertyUrlGenerator.swift */,
+				20B5D3C5210CC52300C94AE3 /* BMWebServiceSellerUrlGenerator.swift */,
+				20B5D3C6210CC52300C94AE3 /* BMWebServiceStatesUrlGenerator.swift */,
+				20B5D3C7210CC52300C94AE3 /* BMWebServiceStylesUrlGenerator.swift */,
+				20B5D3C8210CC52300C94AE3 /* BMWebServiceUrlGenerator.swift */,
+			);
+			path = BMUrlGenerator;
+			sourceTree = "<group>";
+		};
+		20B5D3C9210CC52300C94AE3 /* BMWebServiceCommunicator */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D3CA210CC52300C94AE3 /* BMWebServiceCommunicator.swift */,
+				20B5D3CB210CC52300C94AE3 /* BMWebServiceCommunicatorForBuyer.swift */,
+				20B5D3CC210CC52300C94AE3 /* BMWebServiceCommunicatorForCountry.swift */,
+				20B5D3CD210CC52300C94AE3 /* BMWebServiceCommunicatorForExterior.swift */,
+				20B5D3CE210CC52300C94AE3 /* BMWebServiceCommunicatorForProperty.swift */,
+				20B5D3CF210CC52300C94AE3 /* BMWebServiceCommunicatorForPropertyStyle.swift */,
+				20B5D3D0210CC52300C94AE3 /* BMWebServiceCommunicatorForPropertyType.swift */,
+				20B5D3D1210CC52300C94AE3 /* BMWebServiceCommunicatorForSeller.swift */,
+			);
+			path = BMWebServiceCommunicator;
+			sourceTree = "<group>";
+		};
+		20B5D3EA210CDEA500C94AE3 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D3EE210CDEA500C94AE3 /* Seller.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		20B5D3F3210CDF3E00C94AE3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D3F4210CDF3E00C94AE3 /* BMBuyerModel.swift */,
+				20B5D3F5210CDF3E00C94AE3 /* BMCountryModel.swift */,
+				20B5D3F6210CDF3E00C94AE3 /* BMExteriorModel.swift */,
+				20B5D3F7210CDF3E00C94AE3 /* BMPropertyModel.swift */,
+				20B5D3F8210CDF3E00C94AE3 /* BMPropertyStyleModel.swift */,
+				20B5D3F9210CDF3E00C94AE3 /* BMPropertyTypeModel.swift */,
+				20B5D3FA210CDF3E00C94AE3 /* BMSellerModel.swift */,
+				20B5D3FB210CDF3E00C94AE3 /* BMStateModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		20B5D404210CDF7400C94AE3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				20B5D405210CDF7400C94AE3 /* BMAppDependencies.swift */,
+				20B5D406210CDF7400C94AE3 /* BMBuyerInfoManager.swift */,
+				20B5D407210CDF7400C94AE3 /* BMKeyBoardManager.swift */,
+				20B5D408210CDF7400C94AE3 /* BMSellerInfoManager.swift */,
+				20B5D409210CDF7400C94AE3 /* BuyerMarket-Bridging-Header.h */,
+				20B5D40C210CDF7400C94AE3 /* RootRouter.swift */,
+				20B5D40D210CDF7400C94AE3 /* UIStoryboard+Addition.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E158B188D938355AB0E7EF67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B20629F0C3D4BDEC85091CE /* Pods_Viper.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +421,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20B5D389210CC4A500C94AE3 /* Build configuration list for PBXNativeTarget "Viper" */;
 			buildPhases = (
+				2DA63E4C3A047CC72447E5D6 /* [CP] Check Pods Manifest.lock */,
 				20B5D373210CC4A500C94AE3 /* Sources */,
 				20B5D374210CC4A500C94AE3 /* Frameworks */,
 				20B5D375210CC4A500C94AE3 /* Resources */,
+				1FA2ED3FD6296910A270C593 /* [CP] Embed Pods Frameworks */,
+				F2C67EF273B5D6C7030B427E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20B5D385210CC4A500C94AE3 /* LaunchScreen.storyboard in Resources */,
+				20B5D3F2210CDEA500C94AE3 /* Seller.storyboard in Resources */,
 				20B5D382210CC4A500C94AE3 /* Assets.xcassets in Resources */,
 				20B5D380210CC4A500C94AE3 /* Main.storyboard in Resources */,
 			);
@@ -131,13 +485,124 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FA2ED3FD6296910A270C593 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Viper/Pods-Viper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Viper/Pods-Viper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DA63E4C3A047CC72447E5D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Viper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2C67EF273B5D6C7030B427E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Viper/Pods-Viper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		20B5D373210CC4A500C94AE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20B5D37D210CC4A500C94AE3 /* ViewController.swift in Sources */,
+				20B5D3AC210CC4F300C94AE3 /* SellerSignedInPresenter.swift in Sources */,
+				20B5D3FD210CDF3E00C94AE3 /* BMCountryModel.swift in Sources */,
+				20B5D3DB210CC52300C94AE3 /* BMWebServiceExteriorUrlGenerator.swift in Sources */,
+				20B5D3E3210CC52300C94AE3 /* BMWebServiceCommunicatorForBuyer.swift in Sources */,
+				20B5D414210CDF7500C94AE3 /* RootRouter.swift in Sources */,
+				20B5D3A8210CC4F300C94AE3 /* SellerSignInInteractor.swift in Sources */,
+				20B5D3E2210CC52300C94AE3 /* BMWebServiceCommunicator.swift in Sources */,
+				20B5D3D8210CC52300C94AE3 /* BMPropertyTypeModelBuilder.swift in Sources */,
+				20B5D400210CDF3E00C94AE3 /* BMPropertyStyleModel.swift in Sources */,
+				20B5D40F210CDF7500C94AE3 /* BMAppDependencies.swift in Sources */,
+				20B5D411210CDF7500C94AE3 /* BMKeyBoardManager.swift in Sources */,
+				20B5D3AF210CC4F300C94AE3 /* SellerSignUpInteractor.swift in Sources */,
+				20B5D3AA210CC4F300C94AE3 /* SellerSignInModuleInterface.swift in Sources */,
+				20B5D3E0210CC52300C94AE3 /* BMWebServiceStylesUrlGenerator.swift in Sources */,
+				20B5D3DF210CC52300C94AE3 /* BMWebServiceStatesUrlGenerator.swift in Sources */,
+				20B5D3D7210CC52300C94AE3 /* BMPropertyStyleModelBuilder.swift in Sources */,
+				20B5D3B0210CC4F300C94AE3 /* SellerSignUpInteractorIO.swift in Sources */,
+				20B5D3D2210CC52300C94AE3 /* BMBuyerModelBuilder.swift in Sources */,
+				20B5D3AD210CC4F300C94AE3 /* SellerSignedInViewController.swift in Sources */,
+				20B5D3E7210CC52300C94AE3 /* BMWebServiceCommunicatorForPropertyStyle.swift in Sources */,
+				20B5D3B4210CC4F300C94AE3 /* SellerSignedUpViewController.swift in Sources */,
+				20B5D410210CDF7500C94AE3 /* BMBuyerInfoManager.swift in Sources */,
+				20B5D3FC210CDF3E00C94AE3 /* BMBuyerModel.swift in Sources */,
 				20B5D37B210CC4A500C94AE3 /* AppDelegate.swift in Sources */,
+				20B5D3DC210CC52300C94AE3 /* BMWebServicePropertyTypeUrlGenerator.swift in Sources */,
+				20B5D402210CDF3E00C94AE3 /* BMSellerModel.swift in Sources */,
+				20B5D3E8210CC52300C94AE3 /* BMWebServiceCommunicatorForPropertyType.swift in Sources */,
+				20B5D3D5210CC52300C94AE3 /* BMModelBuilder.swift in Sources */,
+				20B5D3E1210CC52300C94AE3 /* BMWebServiceUrlGenerator.swift in Sources */,
+				20B5D3B2210CC4F300C94AE3 /* SellerSignUpRouter.swift in Sources */,
+				20B5D3B5210CC4F300C94AE3 /* SellerSignedUpViewInterface.swift in Sources */,
+				20B5D3B1210CC4F300C94AE3 /* SellerSignUpModuleInterface.swift in Sources */,
+				20B5D3DA210CC52300C94AE3 /* BMWebServiceBuyerUrlGenerator.swift in Sources */,
+				20B5D403210CDF3E00C94AE3 /* BMStateModel.swift in Sources */,
+				20B5D3FE210CDF3E00C94AE3 /* BMExteriorModel.swift in Sources */,
+				20B5D3D3210CC52300C94AE3 /* BMCountryModelBuilder.swift in Sources */,
+				20B5D401210CDF3E00C94AE3 /* BMPropertyTypeModel.swift in Sources */,
+				20B5D3DE210CC52300C94AE3 /* BMWebServiceSellerUrlGenerator.swift in Sources */,
+				20B5D3E6210CC52300C94AE3 /* BMWebServiceCommunicatorForProperty.swift in Sources */,
+				20B5D3AE210CC4F300C94AE3 /* SellerSignedInViewInterface.swift in Sources */,
+				20B5D3E4210CC52300C94AE3 /* BMWebServiceCommunicatorForCountry.swift in Sources */,
+				20B5D412210CDF7500C94AE3 /* BMSellerInfoManager.swift in Sources */,
+				20B5D3E9210CC52300C94AE3 /* BMWebServiceCommunicatorForSeller.swift in Sources */,
+				20B5D3E5210CC52300C94AE3 /* BMWebServiceCommunicatorForExterior.swift in Sources */,
+				20B5D415210CDF7500C94AE3 /* UIStoryboard+Addition.swift in Sources */,
+				20B5D3A9210CC4F300C94AE3 /* SellerSignInInteractorIO.swift in Sources */,
+				20B5D3DD210CC52300C94AE3 /* BMWebServicePropertyUrlGenerator.swift in Sources */,
+				20B5D3D9210CC52300C94AE3 /* BMSellerModelBuilder.swift in Sources */,
+				20B5D3B3210CC4F300C94AE3 /* SellerSignedUpPresenter.swift in Sources */,
+				20B5D3AB210CC4F300C94AE3 /* SellerSignInRouter.swift in Sources */,
+				20B5D3FF210CDF3E00C94AE3 /* BMPropertyModel.swift in Sources */,
+				20B5D3D4210CC52300C94AE3 /* BMExteriorModelBuilder.swift in Sources */,
+				20B5D3D6210CC52300C94AE3 /* BMPropertyModelBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +737,7 @@
 		};
 		20B5D38A210CC4A500C94AE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EB559865992E6337CA9B8A6 /* Pods-Viper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +752,7 @@
 		};
 		20B5D38B210CC4A500C94AE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D3D076B4A8D34E34DF785EF /* Pods-Viper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
